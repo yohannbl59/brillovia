@@ -61,6 +61,10 @@ header{
     text-decoration: none;
 }
 
+.navbar a{
+    text-decoration: none;
+}
+
 .image-section {
   position: relative;
   height: 190px;
@@ -101,17 +105,18 @@ header{
     text-shadow: 0px 5px 5px #000000a1;
 }
 
-.grid-index h3 {
+.grid-index h3{
     color: #2c4a4a;
     margin: 0;
     font-size: 17px;
 }
 
 section{
-    display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+    width: 80%;
+    margin: 0 auto;
 }
 
 footer{
@@ -120,6 +125,12 @@ footer{
 }
 
 footer h3{
+    color: #2c4a4a;
+    margin: 0;
+    font-size: 17px;
+}
+
+.grillecontenu h3{
     color: #2c4a4a;
     margin: 0;
     font-size: 17px;
@@ -151,10 +162,16 @@ section h2{
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 80%;
     gap: 5%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.grillecolone{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 1%;
 }
 
 .mentions{
@@ -182,6 +199,26 @@ section h2{
     border-style: solid;
     text-align: center;
     margin-bottom: 5%;
+}
+
+.grillecontenu {
+    display: flex;
+    justify-content: space-between;
+    border-color: #2F4F4F;
+    border-radius: 50px;
+    border-width: 1px;
+    padding: 2%;
+    border-style: solid;
+    margin-bottom: 2%;
+    gap: 5%;
+    align-items: stretch; /* Important : pour que l'image prenne toute la hauteur */
+    position: relative;
+    overflow: hidden;
+}
+
+.grillecontenu img {
+    height: 100%; /* Prend toute la hauteur du conteneur */
+    object-fit: cover; /* Pour éviter les distorsions */
 }
 
 .grid-index img{
