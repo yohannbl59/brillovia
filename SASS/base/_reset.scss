@@ -1,5 +1,6 @@
 body{
-    background-color: #FAFAF4;
+    background-image: url(../../images/background.png);
+    background-size: cover;
     margin: 0;
     font-family: "Lexend", sans-serif;
     font-size: 17px;
@@ -10,26 +11,59 @@ section{
     margin: 0 auto;
 }
 
-.box{
-    background-color: #FDFDF9;
+.box {
+    background: rgba(255, 255, 255, 0.15); /* fond translucide */
     border-radius: 50px;
     padding: 50px;
-    margin-bottom: 5%;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px); /* pour Safari */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* légère bordure blanche */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* ombre douce */
 }
 
-h2{
-    color: #2c4a4a;
-    margin: 0;
-    font-size: 25px;
-    font-weight: 900;
-    margin-bottom: 1%;
+h2, h3, p {
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    color: #F0F4F8;
 }
 
-h3{
-    color: #2c4a4a;
+h2 {
+    font-size: 32px;
+    letter-spacing: 1px;
 }
 
-p{
-    color: #2c4a4a;
-    margin: 0;
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.hero {
+  background: url('../../images/bannerindex.svg') center center / cover no-repeat;
+  width: 80%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.15); /* fond translucide */
+  padding: 20px 40px;
+  border-radius: 50px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  font-size: 24px;
+  font-weight: 700;
+  color: #F0F4F8;
+  text-align: center;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.2); /* légère bordure blanche */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* ombre douce */
 }

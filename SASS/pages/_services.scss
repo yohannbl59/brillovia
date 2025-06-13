@@ -1,0 +1,16 @@
+.grille-services{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.grille-services .box{
+    padding: 0;
+    display: flex;
+    padding: 50px;
+}
+
+.grille-services .box p{
+    width: 80%;
+}

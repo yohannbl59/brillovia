@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 body{
-    background-color: #FAFAF4;
+    background-image: url(../images/background.png);
+    
     margin: 0;
     font-family: "Lexend", sans-serif;
     font-size: 17px;
